@@ -12,7 +12,7 @@ const sections = [
 const API_URL = '/api';
 
 // State Management
-let foodItems = [];
+let fooditems = [];
 let currentFilter = '';
 let searchQuery = '';
 
