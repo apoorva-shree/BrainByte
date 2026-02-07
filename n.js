@@ -427,11 +427,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
 /*
 const sections = [
-    document.getElementById("dashboard"),
-    document.getElementById("home"),
-    document.getElementById("donate-section"),
-    document.getElementById("about-us-page"),
-    document.getElementById("ngo-register-section")
+  document.getElementById("dashboard"),
+  document.getElementById("home"),
+  document.getElementById("donate-section"),
+  document.getElementById("ngo-register-section"),
+  document.getElementById("partners-section") // 👈 add this
 ];
 
 console.log(sections);

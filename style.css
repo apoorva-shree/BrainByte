@@ -879,52 +879,6 @@ html {
     display: none;
 }
 
-.thank-you-page {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #f9f9f9;
-    z-index: 9999;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.thank-you-content {
-    text-align: center;
-    padding: 50px;
-    background: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-}
-
-.thank-you-content h1 {
-    color: #28a745;
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
-
-.thank-you-content p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.thank-you-content .btn {
-    padding: 12px 25px;
-    background: #28a745;
-    color: #fff;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 1rem;
-}
-
-.thank-you-content .btn:hover {
-    background: #218838;
-}
 /* =========================
    NGO Registration Section
    ========================= */
@@ -1006,3 +960,81 @@ html {
 section {
     scroll-margin-top: 80px; /* height of your fixed nav */
 }
+.partners-section {
+  padding: 60px 40px;
+  margin-left: 260px; /* same as sidebar width */
+  background: linear-gradient(135deg, #e8f9f1, #f6fff9);
+}
+
+.partners-section h2 {
+  font-size: 30px;
+  margin-bottom: 8px;
+  color: #1f7a57;
+}
+
+.partners-section > p {
+  margin-bottom: 35px;
+  color: #3a6351;
+  font-size: 15px;
+}
+
+/* Grid */
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+}
+
+/* NGO Card */
+.partner-card {
+  background: linear-gradient(145deg, #ffffff, #f0fff7);
+  padding: 22px;
+  border-radius: 16px;
+  border-left: 6px solid #2ecc71;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Hover effect */
+.partner-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(46, 204, 113, 0.25);
+}
+
+/* NGO Name */
+.partner-card h3 {
+  color: #145a32;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+/* NGO Details */
+.partner-card p {
+  color: #2f4f4f;
+  font-size: 14px;
+  margin: 4px 0;
+}
+
+/* Optional badge */
+.partner-card::after {
+  content: "Verified NGO";
+  display: inline-block;
+  margin-top: 12px;
+  padding: 4px 10px;
+  font-size: 12px;
+  border-radius: 20px;
+  background: #2ecc71;
+  color: #fff;
+}
+
+.about-page {
+  text-align: center;
+}
+
+.about-page p,
+.about-page h2,
+.about-page h3 {
+  max-width: 800px;
+  margin: 0 auto 16px;
+}
+
