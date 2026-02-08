@@ -118,15 +118,21 @@
                 Please fill in the details below to schedule a pickup
             </p>
 
-            <form id="donation-form" class="donation-form">
+            <!--<form id="donation-form" class="donation-form">-->
+            <form 
+            id="donationForm"
+            action="http://127.0.0.1:5000/api/donate"
+            method="POST"
+            enctype="multipart/form-data">
+<!--here-->
                 <div class="form-group">
                     <label>Donor Name</label>
-                    <input type="text" placeholder="Your full name" required>
+                    <input type="text" name="name" placeholder="Your full name" required>
                 </div>
-
+<!--here-->
             <div class="form-group">
                 <label>Contact Number / Email</label>
-                <input type="text" placeholder="Phone number or email" required>
+                <input type="text" name="contact" placeholder="Phone number or email" required>
             </div>
 
             <div class="form-group">
@@ -176,10 +182,10 @@
                     <option>2–3 Days</option>
                 </select>
             </div>
-
+<!--here-->
             <div class="form-group">
                 <label>Upload Food Image</label>
-                <input type="file" name="food_image" accept="image/*" required>
+                <input type="file" name="food_image" accept="image/*" capture="environment">
             </div>
 
                 <button type="submit" class="btn btn-primary">
